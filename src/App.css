@@ -1,0 +1,144 @@
+.mac-book-air-10 {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 39px;
+  display: flex;
+}
+
+.image-106 {
+  height: 100%;
+  background-image: url("/src/assets/image106.png");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 44px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  display: flex;
+}
+
+.create-your-account {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 37px;
+  font-weight: 800;
+}
+
+.email-phone {
+  text-align: center;
+  margin-top: -50px;
+  margin-left:-550px;
+}
+
+.pss {
+  text-align: center;
+  margin-top: -20px;
+  margin-left:-580px;
+}
+.cpss {
+  text-align: center;
+  margin-top: -20px;
+  margin-left:-470px;
+}
+.rectangle-8 {
+  width: 600px;
+  height: 32px;
+  object-fit: cover;
+  margin-left: 16px;
+}
+
+.username {
+  text-align: center;
+  margin-top: -20px;
+  margin-left:-575px;
+}
+
+.rectangle-9 {
+  width: 464px;
+  height: 237px;
+  object-fit: cover;
+  margin-bottom: 28px;
+  margin-left: 16px;
+}
+
+.flex-container {
+  width: 40%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 11px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 34px;
+  display: flex;
+}
+
+.rectangle-10 {
+  width: 38px;
+  height: 34px;
+  object-fit: cover;
+}
+
+.terms-conditions {
+  margin-bottom: 22px;
+  margin-right:300px;
+}
+
+.rectangle-11 {
+  color: #000;
+  width: 20%;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 20px;
+  flex-direction: row;
+  flex-basis: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  margin-bottom: 17px;
+  margin-left: -100px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 39px;
+  display: flex;
+}
+
+.sign-up {
+  margin-bottom: 2px;
+  margin-left: 4px;
+  
+
+}
+
+input{
+  margin-left: -350px;
+  width: 600px;
+  height: 30px;
+  margin-top: -30px;
+  margin-left:-100px;
+}
+
+.ch{
+  width: 30px;
+  margin-left: -50px;
+
+}
+
+.sign-up{
+  margin-top: 10px;
+}
