@@ -1,26 +1,74 @@
+import { useState } from "react";
 import "./App.css";
+import FormInput from "./FormInput.jsx";
+
 const App = () => {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    number: "",
+    image: "",
+  });
+
+  const inputs = [
+    {
+      id: 1,
+      name: "username",
+      type: "text",
+      placeholder: "your Username",
+      errorMessage:
+        "Please fill the column",
+      label: "Enter your Username",
+      pattern: "^[A-Za-z0-9]{3,16}$",
+      required: true,
+    },
+    {
+      id: 2,
+      name: "email",
+      type: "email",
+      placeholder: "Your Email",
+      errorMessage: "Invalid email address!",
+      label: "Your Email",
+      required: true,
+    },
+    {
+      id: 2,
+      name: "password",
+      type: "password",
+      placeholder: "Enter your Password",
+      errorMessage: "Please fill the password",
+      label: "Password",
+      minlength:4,
+      maxlength:12,
+      required: true,
+    },
+   
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
   return (
-    <div className="mac-book-air-10">
-      <div className="image-106">
-        <span className="create-your-account">CREATE YOUR ACCOUNT</span>
-        <span className="email-phone">Email&#x2F;Phone</span>
-        <input type="text"/>
-        <span className="username">Username</span>
-        <input type="text"/>
-        <span className="pss">Password</span>
-        <input type="password"/>
-        <span className="cpss">Confirm Password</span>
-        <input type="text"/>
-        <div className="flex-container">
-          <input className="ch" type="checkbox"/>
-          <span className="terms-conditions">TERMS & CONDITIONS</span>
-        </div>
-        <button className="rectangle-11">
-          <span className="sign-up">SIGN UP</span>
-        </button>
-      </div>
+    <div className="app">
+      <form onSubmit={handleSubmit}>
+        <h1>LOGIN FORM</h1>
+        {inputs.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
+        <button>SUBMIT</button>
+      </form>
     </div>
   );
 };
+
 export default App;
